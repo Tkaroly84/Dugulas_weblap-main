@@ -1,0 +1,174 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+}
+
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.navbar-brand {
+  font-size: 52px;
+  font-style: italic;
+}
+
+#navbarNavDropdown {
+  justify-content: end;
+  text-align: center;
+}
+
+#navbarNavDropdown a:hover {
+  font-size: larger;
+  color: darkturquoise;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: auto;
+}
+#logo iframe {
+  margin-left: 2rem;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section {
+  display: flex;
+  height: auto;
+}
+.section h5 {
+  margin: 1rem;
+}
+.section .udvozlo_szoveg {
+  margin-left: 1rem;
+  width: 50%;
+}
+.section .gif {
+  width: 50%;
+  margin-top: 20%;
+}
+.section .gif iframe {
+  width: 80%;
+}
+
+.dugulas_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.dugulas_container div {
+  width: 20%;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: darkturquoise;
+  text-align: center;
+  align-items: center;
+}
+.dugulas_container div img {
+  border-radius: 50%;
+  width: 90%;
+  height: 70%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.share-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .share-overlay {
+  opacity: 1;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#qrkod {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: rgba(151, 149, 149, 0.6117647059);
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(151, 149, 149, 0.6117647059) !important;
+  }
+  .navbar .navbar-brand {
+    font-size: 62px;
+    font-style: italic;
+    color: #ff6600 !important;
+  }
+  .navbar #logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+  }
+  .navbar #logo iframe {
+    margin-left: 0rem;
+    width: 40px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .navbar #logo a {
+    text-align: center;
+  }
+  .navbar .udvozlo_szoveg {
+    display: none;
+  }
+  .navbar .gif {
+    display: none;
+  }
+  .navbar .dugulas_container {
+    display: block;
+  }
+  .navbar .dugulas_container div {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #ffcc00, #ff6600);
+    margin: auto;
+    margin-top: 10px;
+  }
+  .navbar .dugulas_container div img {
+    margin-top: 5px;
+    width: 50%;
+  }
+}/*# sourceMappingURL=index.css.map */
